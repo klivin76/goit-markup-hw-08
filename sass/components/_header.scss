@@ -1,0 +1,139 @@
+// Header.
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+
+    margin: 0 auto;
+    border: 1px solid var(--border-color-header);
+
+&__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    padding: 0 15px;
+        }
+    }
+
+
+
+// Меню Header.
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+&__burger-menu {
+    @media (min-width: 768px) {
+        display: none;
+  }
+ }
+}
+
+
+.burger {
+    display: none;
+    padding: 0;
+    margin: 0 auto;
+
+& {
+    @extend %list;
+}
+@media (min-width: 768px) {
+    display: flex;
+}
+
+&__nav-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+&__nav-link:last-child {
+    margin-right: auto;
+}
+
+&__nav-link &__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__nav-link &__link:hover,
+&__nav-link &__link:focus {
+    color: var(--accent-color);
+}
+
+&__nav-link &__link.current {
+    color: var(--accent-color);
+}
+}
+
+// Container Header-contacts.
+.container-contact {
+    max-width: 1200px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0 auto 0 318px;
+    text-align: center;
+
+&__nav {
+    display: flex;
+    gap: 30px;
+}
+&__nav {
+    @extend %list;
+}
+}
+
+// Header contacts.
+.contact {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+            display: flex;
+        }
+
+&__icon-header {
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+&__icon-header:hover {
+    color: var(--accent-color);
+}
+
+.container-contact__nav &__item-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    color: var(--text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-contact__nav &__item-header:hover,
+.container-contact__nav &__item-header:focus {
+    color: var(--accent-color);
+}
+}

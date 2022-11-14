@@ -1,0 +1,35 @@
+// Section-job.
+.job-section {
+    padding: 94px 0;
+    text-align: center;
+
+
+&__heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+    font-size: 36px;
+    line-height: 1.17;
+}
+}
+
+// Список робіт.
+.work-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+& {
+    @extend %list;
+}
+
+
+&__photo:last-child {
+    margin-right: 215px;
+}
+
+&__photo:first-child {
+    margin-left: 215px;
+}
+}

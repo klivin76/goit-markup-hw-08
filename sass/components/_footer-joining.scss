@@ -1,0 +1,56 @@
+// Лого приєднання до соцмереж.
+// Call-to-action.
+.joining {
+    margin-top: 72px;
+    margin-left: 65px;
+    margin-bottom: 100px;
+    width: 206px;
+    height: 80px;
+
+&__title-footer {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--color-white);
+}
+}
+
+// Іконки.
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+&__social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+&__social-networks {
+    @extend %list;
+}
+
+
+&__link-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+&__link-social:hover {
+    fill: var(--color-white);
+    background-color: var(--accent-color);
+}
+}
