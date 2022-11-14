@@ -430,6 +430,23 @@ body {
   fill: var(--accent-color);
 }
 
+.mobile-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 26px;
+  height: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--color-white);
+  border: none;
+}
+
 .button-modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,9 +609,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -616,6 +633,7 @@ body {
   max-width: 1200px;
   height: 80px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header-menu {
@@ -628,9 +646,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .header-menu__burger-menu {
     display: none;
   }
@@ -639,9 +657,9 @@ body {
 .burger {
   display: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 255px auto 93px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -678,7 +696,7 @@ body {
   max-width: 1200px;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin: 0 auto 0 318px;
+  margin: 0;
   text-align: center;
 }
 .container-contact__nav {
@@ -696,7 +714,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;

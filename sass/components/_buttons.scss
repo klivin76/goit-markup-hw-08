@@ -49,6 +49,18 @@
     fill: var(--accent-color);
 }
 }
+// Кнопка мобільного меню.
+.mobile-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 16px;
+        color: var(--primary-text-color);
+            background-color: var(--color-white);
+            border: none;
+}
+
 // Кнопка модального вікна.
 .button-modal {
     display: flex;

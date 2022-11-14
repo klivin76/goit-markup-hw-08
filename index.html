@@ -16,16 +16,17 @@
     <header class="page-header">
       <div class="page-header__header">
         <a class="logo" href="./index.html"
-          ><span class="logo__logotype-web">Web</span><span class="logo__logotype-studio">Studio</span></a
+          ><span class="logo__logotype-web">Web</span
+          ><span class="logo__logotype-studio">Studio</span></a
         >
 
-        <div class="header-menu">
-        <nav>          
-          <button class="header-menu__burger-menu">
-            <svg width="40" height="40">
-              <use href="./images/sprite.svg#icon-burger-menu"></use>
-            </svg>
-          </button>
+        <!-- <div class="header-menu"> -->
+        <button class="header-menu__burger-menu js-open-menu">
+          <svg class="mobile-button" width="40" height="40">
+            <use href="./images/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        <nav>
           <ul class="burger list">
             <li class="burger__nav-link">
               <a href="./index.html" class="burger__link current">Студія</a>
@@ -33,8 +34,10 @@
             <li class="burger__nav-link">
               <a href="./portfolio.html" class="burger__link">Портфоліо</a>
             </li>
-            <li class="burger__nav-link"><a href="#" class="burger__link">Контакти</a></li>
-          </ul>          
+            <li class="burger__nav-link">
+              <a href="#" class="burger__link">Контакти</a>
+            </li>
+          </ul>
         </nav>
 
         <div class="container-contact">
@@ -57,7 +60,7 @@
             </li>
           </ul>
         </div>
-        </div>
+        <!-- </div> -->
       </div>
     </header>
 
@@ -230,7 +233,7 @@
                   </li>
                   <li>
                     <a class="logotype__social-link" href="#">
-                      <svg  width="20" height="20">
+                      <svg width="20" height="20">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -327,7 +330,6 @@
               </div>
             </li>
           </ul>
-          
         </div>
       </section>
 
@@ -345,7 +347,7 @@
             </li>
             <li>
               <a class="brand__customers-link" href="#">
-                <svg  width="106" height="60">
+                <svg width="106" height="60">
                   <use href="./images/sprite.svg#icon-company_th"></use>
                 </svg>
               </a>
@@ -387,8 +389,12 @@
     <footer class="footer">
       <div class="footer__page-footer">
         <div class="footer__address">
-          <a class="logo" href="./index.html"><span class="logo__logotype-web">Web</span><span
-              class="logo__logotype-studio logo__logotype-studio--inverse">Studio</span></a>
+          <a class="logo" href="./index.html"
+            ><span class="logo__logotype-web">Web</span
+            ><span class="logo__logotype-studio logo__logotype-studio--inverse"
+              >Studio</span
+            ></a
+          >
 
           <address>
             <ul class="communications list">
@@ -403,12 +409,16 @@
                 >
               </li>
               <li>
-                <a class="communications__items-contact" href="mailto:info@devstudio.com"
+                <a
+                  class="communications__items-contact"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="communications__items-contact" href="tel:+380961111111"
+                <a
+                  class="communications__items-contact"
+                  href="tel:+380961111111"
                   >+38 096 111-11-11</a
                 >
               </li>
@@ -468,8 +478,12 @@
               />
             </label>
             <button class="button-subscribe" type="submit">
-             Підписатися
-              <svg class="button-subscribe__icon-subscribe button-subscribe__icon-subscribe--append" width="24" height="24">
+              Підписатися
+              <svg
+                class="button-subscribe__icon-subscribe button-subscribe__icon-subscribe--append"
+                width="24"
+                height="24"
+              >
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -480,12 +494,52 @@
 
     <!-- Мобільне меню -->
 
-    <div class="mobile-menu">
-     <div class="container-mobile">
-      <nav class="mobile-menu__nav-mobile">
-        
-      </nav>
-     </div>
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="mobile-menu__close-button js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav-mobile">
+          <ul class="mobile-list list">
+            <li class="mobile-list__nav-mob">
+              <a href="./index.html" class="mobile-list__mobi-link">Студія</a>
+            </li>
+            <li class="mobile-list__nav-mob">
+              <a href="./portfolio.html" class="mobile-list__mobi-link">Портфоліо</a>
+            </li>
+            <li class="mobile-list__nav-mob">
+              <a href="#" class="mobile-list__mobi-link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="cont-list list">
+            <li class="cont-list__mobile-contact">
+              <a href="tel:+380961111111" class="cont-list__item-mobile">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="cont-list__mobile-contact">
+              <a
+                href="mailto:info@devstudio.com"
+                class="cont-list__item-mail"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="soc-list list">
+            <li class="soc-list__mobi-soc">Instagram
+              <span class="soc-list__line">|</span>
+            </li>
+            <li class="soc-list__mobi-soc">Twitter</li>
+            <span class="soc-list__line">|</span>
+            <li class="soc-list__mobi-soc">Facebook</li>
+            <span class="soc-list__line">|</span>
+            <li class="soc-list__mobi-soc">LinkedIn</li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <!-- Модальне вікно -->
@@ -497,7 +551,9 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="backdrop__title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="backdrop__title-modal">
+          Залиште свої дані, ми вам передзвонимо
+        </h2>
         <form class="form">
           <label class="form__form-label" for="nickname">Ім'я</label>
           <div class="field">
@@ -563,7 +619,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/mobile-menu.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
