@@ -5,11 +5,16 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url('../images/bg-hero.jpg');
+        url('../../images/hero1600d.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+@media screen and (min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    background-image: url('../../images/hero3200d@2x.jpg');
+}
 
 &__hero-list {
     display: block;
@@ -26,9 +31,15 @@
     color: var(--color-white);
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+        line-height: 1.61;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        font-size: 44px;
+            line-height: 1.36;
+    }
 }
 }

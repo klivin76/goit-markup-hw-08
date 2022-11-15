@@ -1,12 +1,15 @@
 .mobile-menu {
   position: fixed;
+  min-height: 100%;
+  //  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   display: none;
   max-width: 480px;
-  max-height: 796px;
+  
   width: 100%;
-  height: 100%;
+  
   background-color: var(--color-white);
   padding: 48px 40px;
   z-index: 1;
@@ -18,9 +21,6 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     width: 40px;
     height: 40px;
@@ -30,7 +30,7 @@
   }
 }
 .mobile-list {
-  margin-bottom: 302px;
+  margin-bottom: 285px;
   & {
     @extend %list;
   }
@@ -82,21 +82,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+    margin: 0 auto;
+
+
   & {
     @extend %list;
   }
+
   &__mobi-soc {
+   
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: var(--accent-color);
   }
-  &__line {
 
-    height: 22px;
-    width: 0;
-    color: var(--border-color-modal);
+  &__line {
+   
+    width: 22px;
+    height: 0px;
+    margin: 0 10px;
+    border-right: 1px solid var(--border-color-modal);
+  
   }
-}
+ }

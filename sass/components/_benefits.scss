@@ -1,24 +1,40 @@
 // Section Переваги.
 
 .section-benefits {
-    max-width: 1600px;
-    padding-top: 94px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1600px;
+  padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
 
-&__index {
-    display: flex;
-    gap: 30px;
-}
+  &__index {
+    width: 100%;
+    padding: 0;
+   
 
-&__index {
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+     
+    }
+        @media screen and (max-width: 480px) {
+            flex-basis: calc((100% - 4 * 15px) / 2);
+        }
+    
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 8 * 15px) / 4);
+        }
+  }
+
+  &__index {
     @extend %list;
-}
+  }
 }
 
 // Переваги.
-
-.benefits {
+.item-benefits {
+  
+  &__benefits {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,9 +44,8 @@
     fill: currentColor;
     background-color: var(--background-color-sekondary);
     border-radius: 4px;
-
-
-&__subtext {
+  }
+  &__subtext {
     margin-bottom: 10px;
     margin-top: 0;
     font-weight: 700;
@@ -38,13 +53,13 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-text-color);
-}
+  }
 
-&__implication {
+  &__implication {
     margin-top: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--text-color);
-}
+  }
 }

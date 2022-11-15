@@ -20,9 +20,9 @@
           ><span class="logo__logotype-studio">Studio</span></a
         >
 
-        <!-- <div class="header-menu"> -->
+        <div class="header-menu">
         <button class="header-menu__burger-menu js-open-menu">
-          <svg class="mobile-button" width="40" height="40">
+          <svg class="mobile-button" width="26" height="16">
             <use href="./images/sprite.svg#icon-burger-menu"></use>
           </svg>
         </button>
@@ -60,10 +60,10 @@
             </li>
           </ul>
         </div>
-        <!-- </div> -->
+        </div>
       </div>
     </header>
-
+    
     <main>
       <!-- Герой -->
       <section class="hero">
@@ -80,49 +80,49 @@
         <div class="container">
           <h2 class="section-benefits__article visually-hidden">Переваги</h2>
           <ul class="section-benefits__index list">
-            <li>
-              <div class="benefits">
+            <li class="item-benefits">
+              <div class="item-benefits__benefits">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits__subtext">Увага до деталей</h3>
-              <p class="benefits__implication">
+              <h3 class="item-benefits__subtext">Увага до деталей</h3>
+              <p class="item-benefits__implication">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li>
-              <div class="benefits">
+              <div class="item-benefits__benefits">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits__subtext">Пунктуальність</h3>
-              <p class="benefits__implication">
+              <h3 class="item-benefits__subtext">Пунктуальність</h3>
+              <p class="item-benefits__implication">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li>
-              <div class="benefits">
+              <div class="item-benefits__benefits">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits__subtext">Планування</h3>
-              <p class="benefits__implication">
+              <h3 class="item-benefits__subtext">Планування</h3>
+              <p class="item-benefits__implication">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li>
-              <div class="benefits">
+              <div class="item-benefits__benefits">
                 <svg width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits__subtext">Сучасні технології</h3>
-              <p class="benefits__implication">
+              <h3 class="item-benefits__subtext">Сучасні технології</h3>
+              <p class="item-benefits__implication">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -139,7 +139,8 @@
             <li class="work-list__photo">
               <div class="work-card">
                 <img
-                  src="./images/pict1.jpg"
+                srcset="./images/comp370.jpg 1x, ./images/comp740@2x.jpg 2x"
+                  src="./images/comp370.jpg"
                   alt="Друкує на клавіатурі компьютера"
                   width="370"
                 />
@@ -151,7 +152,8 @@
             <li class="work-list__photo">
               <div class="work-card">
                 <img
-                  src="./images/pict2.jpg"
+                srcset="./images/note370.jpg 1x, ./images/note740@2x.jpg 2x"
+                  src="./images/note370.jpg"
                   alt="Працює з ноутбуком"
                   width="370"
                 />
@@ -163,7 +165,8 @@
             <li class="work-list__photo">
               <div class="work-card">
                 <img
-                  src="./images/pict3.jpg"
+                srcset="./images/tablet370.jpg 1x, ./images/tablet740@2x.jpg 2x"
+                  src="./images/tablet370.jpg"
                   alt="Малює на планшеті"
                   width="370"
                 />
@@ -182,7 +185,9 @@
           <h2 class="command__heading">Наша команда</h2>
           <ul class="command__team list">
             <li class="team-foto">
-              <img src="./images/photo1.jpg" alt="Ігор" width="270" />
+              <img
+              srcset="./images/igor270.jpg 1x, ./images/igor540@2x.jpg 2x"
+              src="./images/igor270.jpg" alt="Ігор" width="270" />
               <h3 class="team-foto__title">Ігор Дем'яненко</h3>
               <p class="team-foto__subtitle">Product Designer</p>
               <div class="logotype">
@@ -219,7 +224,9 @@
               </div>
             </li>
             <li class="team-foto">
-              <img src="./images/photo2.jpg" alt="Ольга" width="270" />
+              <img
+              srcset="./images/olga270.jpg 1x, ./images/olga540@2x.jpg 2x"
+              src="./images/olga270.jpg" alt="Ольга" width="270" />
               <h3 class="team-foto__title">Ольга Рєпіна</h3>
               <p class="team-foto__subtitle">Frontend Developer</p>
               <div class="logotype">
@@ -256,7 +263,9 @@
               </div>
             </li>
             <li class="team-foto">
-              <img src="./images/photo3.jpg" alt="Микола" width="270" />
+              <img
+              srcset="./images/mykola270.jpg 1x, ./images/mykola540@2x.jpg 2x"
+              src="./images/mykola270.jpg" alt="Микола" width="270" />
               <h3 class="team-foto__title">Микола Тарасов</h3>
               <p class="team-foto__subtitle">Marketing</p>
               <div class="logotype">
@@ -293,7 +302,9 @@
               </div>
             </li>
             <li class="team-foto">
-              <img src="./images/photo4.jpg" alt="Михайло" width="270" />
+              <img
+              srcset="./images/miho270.jpg 1x, ./images/miho540@2x.jpg 2x"
+              src="./images/miho270.jpg" alt="Михайло" width="270" />
               <h3 class="team-foto__title">Михайло Єрмаков</h3>
               <p class="team-foto__subtitle">UI Designer</p>
               <div class="logotype">
@@ -334,7 +345,7 @@
       </section>
 
       <!-- Постійні клієнти -->
-      <section class="regular-customers">
+      <!-- <section class="regular-customers">
         <div class="container">
           <h2 class="regular-customers__heading">Постійні клієнти</h2>
           <ul class="brand list">
@@ -383,10 +394,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__page-footer">
         <div class="footer__address">
           <a class="logo" href="./index.html"
@@ -395,7 +406,6 @@
               >Studio</span
             ></a
           >
-
           <address>
             <ul class="communications list">
               <li>
@@ -424,11 +434,11 @@
               </li>
             </ul>
           </address>
-        </div>
+        </div> -->
 
         <!-- Footer social  -->
 
-        <div class="joining">
+        <!-- <div class="joining">
           <h3 class="joining__title-footer">Приєднуйтесь</h3>
           <div class="icon-social">
             <ul class="badge__social-networks list">
@@ -462,11 +472,11 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <!-- Підписка у футері -->
 
-        <div class="subscription">
+        <!-- <div class="subscription">
           <h3 class="subscription__title-subscribe">Підпишіться на розсилку</h3>
           <form class="subscribe">
             <label for="subscribe-mail">
@@ -490,7 +500,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Мобільне меню -->
 
@@ -530,12 +540,13 @@
           </ul>
           <ul class="soc-list list">
             <li class="soc-list__mobi-soc">Instagram
-              <span class="soc-list__line">|</span>
+              <span class="soc-list__line"></span>
             </li>
-            <li class="soc-list__mobi-soc">Twitter</li>
-            <span class="soc-list__line">|</span>
-            <li class="soc-list__mobi-soc">Facebook</li>
-            <span class="soc-list__line">|</span>
+            <li class="soc-list__mobi-soc">Twitter
+            <span class="soc-list__line"></span>
+          </li>
+            <li class="soc-list__mobi-soc">Facebook
+            <span class="soc-list__line"></span></li>
             <li class="soc-list__mobi-soc">LinkedIn</li>
           </ul>
         </nav>
