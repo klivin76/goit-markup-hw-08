@@ -561,6 +561,7 @@ body {
   margin-bottom: 100px;
   width: 206px;
   height: 80px;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .joining {
@@ -860,6 +861,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -921,21 +923,39 @@ body {
 }
 
 .communications .communications__items {
-  color: var(--color-white);
+  margin-top: 20px;
+  margin-bottom: 8px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
+  color: var(--color-white);
+}
+@media screen and (min-width: 1200px) {
+  .communications .communications__items {
+    margin-bottom: 9px;
+  }
 }
 .communications .communications__items:hover, .communications .communications__items:focus {
   color: var(--accent-color);
 }
 .communications .communications__items-contact {
-  color: var(--color-text-contact);
+  margin-bottom: 8px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
+  color: var(--color-text-contact);
+}
+@media screen and (min-width: 1200px) {
+  .communications .communications__items-contact {
+    margin-bottom: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .communications__items-contact:last-child {
+    margin-bottom: 0;
+  }
 }
 .communications .communications__items-contact:hover, .communications .communications__items-contact:focus {
   color: var(--accent-color);
