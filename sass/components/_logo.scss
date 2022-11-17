@@ -1,47 +1,54 @@
 // Logo WEBStudio.
 .logo {
-    margin-right: auto;
-    font-weight: 700;
-    font-family: var(--font-family-sekondary);
-    font-size: 26px;
-    line-height: 1.9;
-    text-decoration: none;
-    color: var(--color-logo);
+  margin-right: auto;
+  font-weight: 700;
+  font-family: var(--font-family-sekondary);
+  font-size: 26px;
+  line-height: 1.9;
+  text-decoration: none;
+  color: var(--color-logo);
 
+  @media screen and (min-width: 768px) {
+    margin-right: 87px;
+  }
 
-& &__logotype-web {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  & &__logotype-web {
     color: var(--accent-color);
-}
+  }
 
-&__logotype-studio--inverse {
+  &__logotype-studio--inverse {
     color: var(--color-white);
-}
+  }
 }
 
 // Логотип соцмереж команди.
 .logotype {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 206px;
-    height: 44px;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 206px;
+  height: 44px;
+  gap: 10px;
 
-&__social-team {
+  &__social-team {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 206px;
     height: 44px;
     gap: 16px;
-}
-&__social-team {
+  }
+  &__social-team {
     @extend %list;
-}
-&__social-link {
+  }
+  &__social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,26 +58,47 @@
     background-color: var(--color-white);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__social-link:hover {
+  &__social-link:hover {
     fill: var(--color-white);
     background-color: var(--accent-color);
-}
+  }
 }
 
 // Логотипи компаній постійних кліентів.
 .brand {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (max-width: 767px) {
+    // width: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     gap: 30px;
+  }
 
-& {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  & {
     @extend %list;
-}
+  }
 
-&__customers-link {
+  &__customers-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,10 +109,10 @@
     border: 1px solid var(--background-color-social);
     border-radius: 4px;
     transition: background-color-social 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__customers-link:hover {
+  &__customers-link:hover {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
-}
+  }
 }

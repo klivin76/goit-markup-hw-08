@@ -7,43 +7,70 @@
   margin-right: auto;
 
   &__index {
-    width: 100%;
-    padding: 0;
-   
 
-    @media screen and (min-width: 480px) {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-     
-    }
-        @media screen and (max-width: 480px) {
-            flex-basis: calc((100% - 4 * 15px) / 2);
-        }
     
-        @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - 8 * 15px) / 4);
-        }
+    @media screen and (max-width: 767px) {
+      display: block;
+      
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+     flex-wrap: nowrap;
+    gap: 30px;
+    }
   }
 
-  &__index {
+    &__index {
     @extend %list;
   }
 }
 
 // Переваги.
 .item-benefits {
-  
+  @media screen and (max-width: 767px) {
+  flex-direction: column;
+  }
+    @media screen and (min-width:768px) {
+      flex-basis: calc((100% - 30px) / 2); 
+      display: inline;
+    }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+&:not(:last-child) {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+
   &__benefits {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    // width: 270px;
     height: 120px;
     margin-bottom: 30px;
     fill: currentColor;
     background-color: var(--background-color-sekondary);
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &__subtext {
     margin-bottom: 10px;
@@ -53,6 +80,9 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    @media screen and (max-width: 767px) {
+        text-align: center;
+      }
   }
 
   &__implication {
@@ -61,5 +91,6 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--text-color);
+   
   }
 }
