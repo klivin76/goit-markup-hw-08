@@ -1,54 +1,58 @@
 // Section Переваги.
 
 .section-benefits {
-  max-width: 1600px;
-  padding-top: 94px;
+    padding-top: 94px;
   margin-left: auto;
   margin-right: auto;
 
   &__index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    margin: 0 auto;
+    
+    gap: 30px;
 
     
     @media screen and (max-width: 767px) {
-      display: block;
-      
+      flex-direction: column;
     }
 
     @media screen and (min-width: 768px) {
-      display: flex;
+      flex-basis: calc((100% - 30px) / 2);
+      // width: 768px;
       flex-wrap: wrap;
       
     }
 
     @media screen and (min-width: 1200px) {
-     flex-wrap: nowrap;
-    gap: 30px;
+      flex-basis: calc((100% - 90px) / 4);
+      // width: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items:stretch;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+      }
     }
   }
 
-    &__index {
+  &__index {
     @extend %list;
   }
 }
 
 // Переваги.
 .item-benefits {
-  @media screen and (max-width: 767px) {
-  flex-direction: column;
-  }
-    @media screen and (min-width:768px) {
-      flex-basis: calc((100% - 30px) / 2); 
-      display: inline;
-    }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 90px) / 4);
-  }
-&:not(:last-child) {
-  @media screen and (max-width: 768px) {
-    margin-bottom: 30px;
-  }
-}
-
+   
 
   &__benefits {
     display: flex;
@@ -60,17 +64,6 @@
     fill: currentColor;
     background-color: var(--background-color-sekondary);
     border-radius: 4px;
-
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      
-    }
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
   }
   &__subtext {
     margin-bottom: 10px;
@@ -81,8 +74,8 @@
     text-transform: uppercase;
     color: var(--primary-text-color);
     @media screen and (max-width: 767px) {
-        text-align: center;
-      }
+      text-align: center;
+    }
   }
 
   &__implication {
@@ -91,6 +84,39 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--text-color);
-   
   }
 }
+
+
+// @media screen and (min-width: 480px){
+// width: 480px;
+
+// }
+//  @media screen and (max-width: 767px) {
+//    display: block;
+//  }
+// @media screen and (min-width: 768px) {
+//     width: 768px;
+//     flex-wrap: wrap;
+// }
+// @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//     flex-wrap: nowrap;
+//       flex-direction: row;
+//       gap: 30px;
+// }
+
+ //   @media screen and (max-width: 767px) {
+ //   flex-direction: column;
+ //   }
+ //     @media screen and (min-width:768px) {
+ //             flex-basis: calc((100% - 30px) / 2);
+ //    }
+ //   @media screen and (min-width: 1200px) {
+ //     flex-basis: calc((100% - 90px) / 4);
+ //   }
+ // &:not(:last-child) {
+ //   @media screen and (max-width: 768px) {
+ //     margin-bottom: 30px;
+ //   }
+ // }
