@@ -1,19 +1,53 @@
 // Footer.
 .footer {
-    max-width: 1600px;
-    height: 252px;
+    // max-width: 1600px;
+    width: 480px;
+        height: 603px;
     padding-top: 0;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
     background-color: var(--background-color-primary);
 
 
 &__page-footer {
     display: flex;
-    width: 100%;
-    max-width: 1200px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    
+    
     margin: 0 auto;
     padding: 0 15px;
+
+    @media screen and (max-width: 767px) {
+            
+            justify-content: center;
+            align-items: center;
+            // flex-direction: row;
+    flex-direction: column;
+            // gap: 30px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 768px;
+            gap: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 1200px;
+            gap: 30px;
+    
+        }
+    
 }
 
 &__address {
@@ -25,6 +59,7 @@
 // Footer-contacts.
 .communications {
     @extend %list;
+    
 
 & &__items {
     color: var(--color-white);

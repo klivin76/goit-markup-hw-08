@@ -562,6 +562,11 @@ body {
   width: 206px;
   height: 80px;
 }
+@media screen and (max-width: 767px) {
+  .joining {
+    margin: 0 auto 60px auto;
+  }
+}
 .joining__title-footer {
   margin-top: 0;
   margin-bottom: 20px;
@@ -834,21 +839,81 @@ body {
 }
 
 .footer {
-  max-width: 1600px;
-  height: 252px;
+  width: 480px;
+  height: 603px;
   padding-top: 0;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   background-color: var(--background-color-primary);
 }
 .footer__page-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  max-width: 1200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .footer__page-footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 768px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1200px;
+    gap: 30px;
+  }
 }
 .footer__address {
   margin-top: 60px;

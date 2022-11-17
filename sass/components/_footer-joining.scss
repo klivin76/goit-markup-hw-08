@@ -6,6 +6,9 @@
     margin-bottom: 100px;
     width: 206px;
     height: 80px;
+    @media screen and (max-width: 767px) {
+        margin: 0 auto 60px auto;
+    }
 
 &__title-footer {
     margin-top: 0;
