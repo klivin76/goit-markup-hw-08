@@ -1,54 +1,55 @@
 // Footer.
 .footer {
-  // max-width: 1600px;
-  width: 480px;
-  height: 603px;
-  padding-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
   background-color: var(--background-color-primary);
 
   &__page-footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-
     margin: 0 auto;
     padding: 0 15px;
 
+    @media screen and (max-width: 479px) {
+      max-width: 100%;
+    }
+
     @media screen and (max-width: 767px) {
-      justify-content: center;
-      align-items: center;
-      // flex-direction: row;
+      display: block;
       flex-direction: column;
-      // gap: 30px;
+      flex-wrap: wrap;
     }
 
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 768px;
       flex-direction: row;
-      width: 768px;
-      gap: 30px;
+      flex-wrap: wrap;
     }
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      width: 1200px;
-      gap: 30px;
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: nowrap;
+      max-width: 1200px;
     }
   }
 
   &__address {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      text-align: left;
+    }
   }
 }
 
@@ -58,15 +59,11 @@
 
   & &__items {
     margin-top: 20px;
-    margin-bottom: 8px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--color-white);
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 9px;
-    }
   }
 
   & &__items:hover,
@@ -75,21 +72,15 @@
   }
 
   & &__items-contact {
-    margin-bottom: 8px;
+    margin-top: 8px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--color-text-contact);
-    
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 9px;
-    }
-  }
 
- &__items-contact:last-child {
     @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
+      margin-top: 9px;
     }
   }
 
