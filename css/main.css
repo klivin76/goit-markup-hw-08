@@ -858,14 +858,14 @@ body {
 }
 .checkbox__terms-contract {
   padding-left: 5px;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.71;
   color: var(--accent-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .checkbox__terms-contract {
-    font-size: 12px;
-    line-height: 1.71;
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 
@@ -899,14 +899,14 @@ body {
 }
 .check__text-check {
   padding-left: 20px;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.71;
   color: var(--text-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .check__text-check {
-    font-size: 12px;
-    line-height: 1.71;
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 .check:checked + .check__icon-check {
