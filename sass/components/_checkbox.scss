@@ -1,16 +1,11 @@
 // Checkbox.
 .checkbox {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 
 
 &__label-check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;   
 }
 
 &__terms-contract {
@@ -18,6 +13,11 @@
     font-size: 14px;
     line-height: 1.7;
     color: var(--accent-color);
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+            line-height: 1.71;
+    }
 }
 }
 // Input checkbox.
@@ -28,8 +28,9 @@
 
 &__icon-check {
     position: absolute;
-    top: 50%;
-    left: 10px;
+    top: 10px;
+    left: 0;
+    margin-right: 8px;
     transform: translateY(-50%);
     display: inline-block;
     width: 16px;
@@ -40,12 +41,22 @@
     border-radius: 2px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    
+    @media screen and (max-width: 1199px) {
+            left: 0;
+        }
 }
 &__text-check {
-    padding-left: 7px;
-    font-size: 14px;
+    padding-left: 20px;
+        font-size: 14px;
     line-height: 1.7;
-    color: var(--text-color);
+    color: var(--text-color);    
+
+    @media screen and (max-width: 1199px) {
+       
+            font-size: 12px;
+            line-height: 1.71;
+        }
 }
 
 &:checked+&__icon-check {
