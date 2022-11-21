@@ -21,8 +21,10 @@
         >
 
         <div class="header-menu">
-        <button class="header-menu__burger-menu js-open-menu">
-          <svg class="mobile-button" width="26" height="16">
+        <button type="button" class="header-menu__burger-menu js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+          <svg class="mobile-button" width="24" height="16">
             <use href="./images/sprite.svg#icon-burger-menu"></use>
           </svg>
         </button>
@@ -504,17 +506,17 @@
 
     <!-- Мобільне меню -->
 
-    <div class="mobile-menu js-menu-container">
-      <div class="container">
-        <button class="mobile-menu__close-button js-close-menu">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+              <button type="button" class="mobile-menu__close-button js-close-menu">
           <svg width="40" height="40">
             <use href="./images/sprite.svg#icon-close-mobile"></use>
           </svg>
         </button>
-        <nav class="mobile-menu__nav-mobile">
+        <div class="mobile-menu__nav-mobile">
+          <nav class="mobile-menu__navi">
           <ul class="mobile-list list">
             <li class="mobile-list__nav-mob">
-              <a href="./index.html" class="mobile-list__mobi-link">Студія</a>
+              <a href="./index.html" class="mobile-list__mobi-link mobile-list__mobi-link--current">Студія</a>
             </li>
             <li class="mobile-list__nav-mob">
               <a href="./portfolio.html" class="mobile-list__mobi-link">Портфоліо</a>
@@ -523,6 +525,7 @@
               <a href="#" class="mobile-list__mobi-link">Контакти</a>
             </li>
           </ul>
+          </nav>
           <ul class="cont-list list">
             <li class="cont-list__mobile-contact">
               <a href="tel:+380961111111" class="cont-list__item-mobile">
@@ -549,9 +552,8 @@
             <span class="soc-list__line"></span></li>
             <li class="soc-list__mobi-soc">LinkedIn</li>
           </ul>
-        </nav>
-      </div>
-    </div>
+        </div>
+         </div>
 
     <!-- Модальне вікно -->
 

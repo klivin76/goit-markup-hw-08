@@ -435,6 +435,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
+
 .button-close:hover {
   fill: var(--accent-color);
 }
@@ -454,6 +455,10 @@ body {
   color: var(--primary-text-color);
   background-color: transparent;
   border: none;
+}
+
+.header-menu__burger-menu:hover {
+  color: var(--accent-color);
 }
 
 .button-modal {

@@ -1,26 +1,27 @@
 .mobile-menu {
   position: fixed;
-  min-height: 100%;
-  flex-direction: column;
-  height: 796px;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   left: 0;
-  display: none;
-  max-width: 480px;
-  
-  width: 100%;
+
+  height: 100vh;
+  width: 100vw;
   
   background-color: var(--color-white);
   padding: 48px 40px;
-  z-index: 1;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 
   &.is-open {
-    display: block;
+    transform: translateX(0);
   }
+  // Кнопка закриття мобільного меню.
   &__close-button {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 22px;
+    right: 22px;
     padding: 0;
     width: 40px;
     height: 40px;
@@ -28,25 +29,49 @@
     color: var(--primary-text-color);
     background-color: inherit;
   }
+
+  .close-button:hover {
+    color: var(--accent-color);
+  }
+  &__nav-mobile {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  &__navi {
+    margin-bottom: auto
+  }
 }
+
 .mobile-list {
-  margin-bottom: 285px;
   & {
     @extend %list;
+  }
+
+  &__nav-mob:not(:last-child) {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 32px;
+      }
   }
 
   &__nav-mob &__mobi-link {
     font-weight: 500;
     font-size: 40px;
-    line-height: 72px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    color: var(--text-color);
+    color: var(--primary-text-color);
+
+    @media screen and (max-width: 479px) {
+      font-size: 35px;
+      line-height: 1.18;
+    }
   }
 
-  &__nav-mob &__mobi-link:hover,
-  &__nav-mob &__mobi-link:focus {
+  &__nav-mob:hover &__mobi-link,
+  &__nav-mob:focus &__mobi-link {
     color: var(--accent-color);
   }
 }
@@ -64,8 +89,18 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color: var(--text-color);
+
+    @media screen and (max-width: 479px) {
+      font-size: 23px;
+      line-height: 1.18;
+    }
+  }
+  &__item-mobile:hover,
+  &__item-mobile:focus {
     color: var(--accent-color);
   }
+
   &__item-mail {
     display: block;
     padding-bottom: 64px;
@@ -76,34 +111,38 @@
     text-decoration: none;
     color: var(--text-color);
   }
+  &__item-mail:hover,
+  &__item-mail:focus {
+    color: var(--accent-color);
+  }
 }
 
 .soc-list {
   display: flex;
-   align-items: center;
-    margin: 0 auto;
-
+  flex-wrap: wrap;
 
   & {
     @extend %list;
   }
 
   &__mobi-soc {
-   
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+      font-size: 16px;
+      line-height: 1.18;
+    }
   }
 
   &__line {
-   
     width: 22px;
     height: 0px;
     margin: 0 10px;
     border-right: 1px solid var(--border-color-modal);
-  
   }
- }
+}
