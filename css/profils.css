@@ -936,31 +936,30 @@ body {
   }
 }
 
-.communications .communications__items {
+.communications {
   margin-top: 20px;
+}
+.communications__address-foot:not(:last-child) {
+  margin-bottom: 12px;
+}
+.communications__items {
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
   color: var(--color-white);
 }
-.communications .communications__items:hover, .communications .communications__items:focus {
+.communications__items:hover, .communications__items:focus {
   color: var(--accent-color);
 }
-.communications .communications__items-contact {
-  margin-top: 8px;
+.communications__items-contact {
   font-style: normal;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
   color: var(--color-text-contact);
 }
-@media screen and (min-width: 1200px) {
-  .communications .communications__items-contact {
-    margin-top: 9px;
-  }
-}
-.communications .communications__items-contact:hover, .communications .communications__items-contact:focus {
+.communications__items-contact:hover, .communications__items-contact:focus {
   color: var(--accent-color);
 }
 

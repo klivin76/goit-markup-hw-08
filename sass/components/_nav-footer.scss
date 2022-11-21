@@ -55,37 +55,38 @@
 
 // Footer-contacts.
 .communications {
-  @extend %list;
-
-  & &__items {
     margin-top: 20px;
-    font-style: normal;
+  & {
+    @extend %list;
+  }
+
+  &__address-foot:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__items {
+     font-style: normal;
     font-size: 14px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--color-white);
   }
 
-  & &__items:hover,
-  & &__items:focus {
+  &__items:hover,
+  &__items:focus {
     color: var(--accent-color);
   }
 
-  & &__items-contact {
-    margin-top: 8px;
+  &__items-contact {
     font-style: normal;
     font-size: 14px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--color-text-contact);
-
-    @media screen and (min-width: 1200px) {
-      margin-top: 9px;
-    }
   }
 
-  & &__items-contact:hover,
-  & &__items-contact:focus {
+  &__items-contact:hover,
+  &__items-contact:focus {
     color: var(--accent-color);
   }
 }
