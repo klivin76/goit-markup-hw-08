@@ -669,6 +669,11 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .page-header__header {
+    width: 480px;
+  }
+}
 
 .header-menu {
   display: -webkit-box;

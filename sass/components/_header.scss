@@ -18,12 +18,15 @@
     height: 80px;
     padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+      width: 480px;
+    }
   }
 }
 
 // Меню Header.
 .header-menu {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +46,7 @@
 
 .burger {
   display: none;
-    padding-right: auto;
+  padding-right: auto;
   margin: 0 auto;
 
   & {
@@ -55,9 +58,9 @@
     justify-content: space-between;
     margin-right: 96px;
   }
-   @media screen and (min-width:1200px) {
-       margin-right: 315px;
-   } 
+  @media screen and (min-width: 1200px) {
+    margin-right: 315px;
+  }
 
   &__nav-link:not(:last-child) {
     margin-right: 50px;
@@ -94,7 +97,7 @@
 // Container Header-contacts.
 .container-contact {
   max-width: 1200px;
-  
+
   margin: 0;
   text-align: center;
 
@@ -102,13 +105,12 @@
     gap: 30px;
     @media screen and (min-width: 768px) {
       display: block;
-     
     }
 
     @media screen and (min-width: 1200px) {
       display: flex;
-    // padding-top: 32px;
-    //     padding-bottom: 32px;
+      // padding-top: 32px;
+      //     padding-bottom: 32px;
     }
   }
   &__nav {
@@ -119,7 +121,7 @@
 // Header contacts.
 .contact {
   display: none;
-//   
+  //
   align-items: center;
 
   @media screen and (min-width: 768px) {
