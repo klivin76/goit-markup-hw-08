@@ -923,12 +923,14 @@ body {
 }
 
 .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1456,7 +1458,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1474,12 +1475,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .brand {
-    width: 1200px;
   }
 }
 .brand__customers-link {
@@ -1821,7 +1816,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
 }
 .command__heading {
   margin-top: 0;
@@ -1830,15 +1824,14 @@ body {
   line-height: 1.17;
 }
 .command__team {
-  display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+  gap: 30px;
 }
 @media screen and (max-width: 767px) {
   .command__team {
@@ -1855,7 +1848,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1873,8 +1865,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 768px;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1892,13 +1882,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 1200px;
-    gap: 30px;
   }
 }
-.team-foto {
+.image {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+.team-foto {
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
