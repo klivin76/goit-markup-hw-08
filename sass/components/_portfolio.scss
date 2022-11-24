@@ -1,7 +1,13 @@
 .project {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--color-white);
     border: 1px solid var(--border-color-portfolio);
+    
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .portfolio {
