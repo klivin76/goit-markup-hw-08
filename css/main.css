@@ -1744,6 +1744,12 @@ body {
     gap: 30px;
   }
 }
+.portfolio__card-poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
 @media screen and (min-widtj: 768px) and (max-width: 1199px) {
   .portfolio__card-poster {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);

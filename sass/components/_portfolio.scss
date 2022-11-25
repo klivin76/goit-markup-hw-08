@@ -24,6 +24,9 @@
   }
 
   &__card-poster {
+    display: flex;
+  margin: 0 auto;
+  
    
     @media screen and (min-widtj: 768px) and (max-width: 1199px) {
          flex-basis: calc((100% - 30px) / 2);
