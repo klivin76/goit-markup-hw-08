@@ -9,16 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  
+
   <body>
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="page-header__header">
-        <a class="logo" href="./index.html"><span class="logo__logotype-web">Web</span><span
-            class="logo__logotype-studio">Studio</span></a>
-    
+        <a class="logo" href="./index.html"
+          ><span class="logo__logotype-web">Web</span
+          ><span class="logo__logotype-studio">Studio</span></a
+        >
+
         <div class="header-menu">
-          <button type="button" class="header-menu__burger-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button
+            type="button"
+            class="header-menu__burger-menu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="mobile-button" width="26" height="16">
               <use href="./images/sprite.svg#icon-burger-menu"></use>
             </svg>
@@ -29,29 +36,36 @@
                 <a href="./index.html" class="burger__link">Студія</a>
               </li>
               <li class="burger__nav-link">
-                <a href="./portfolio.html" class="burger__link current">Портфоліо</a>
+                <a href="./portfolio.html" class="burger__link current"
+                  >Портфоліо</a
+                >
               </li>
               <li class="burger__nav-link">
                 <a href="#" class="burger__link">Контакти</a>
               </li>
             </ul>
           </nav>
-    
+
           <div class="container-contact">
             <ul class="container-contact__nav list">
               <li class="contact">
-                <a href="mailto:info@devstudio.com" class="contact__item-header">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact__item-header"
+                >
                   <svg class="contact__icon-mail" width="16" height="12">
                     <use href="./images/sprite.svg#icon-mail"></use>
                   </svg>
-                  info@devstudio.com</a>
+                  info@devstudio.com</a
+                >
               </li>
               <li class="contact">
                 <a href="tel:+380961111111" class="contact__item-header">
                   <svg class="contact__icon-smartphone" width="10" height="16">
                     <use href="./images/sprite.svg#icon-smartphone"></use>
                   </svg>
-                  +38 096 111 11 11</a>
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
           </div>
@@ -85,272 +99,434 @@
 
         <!-- Проекти -->
         <div class="container">
-          <h2 class="portfolio__article visually-hidden">Наши проекти</h2>          
-            <ul class="portfolio list">
-              <li>
-                <a href="#" class="portfolio__card-link">
-                  <div class="thumb">
-                    <img
-                      class="thumb__photo-portfolio"
+          <h2 class="portfolio__article visually-hidden">Наши проекти</h2>
+          <ul class="portfolio list">
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link">
+                <div class="thumb">
+                  <picture>
+                    <source
                       srcset="
-                      ./images/tehnocryak-tablet354.jpg 354w,
-                      ./images/tehnocryak-desktop370.jpg 370w,
-                      ./images/tehnocryak-mobile450.jpg 450w,
-                      ./images/tehnocryak-tablet708.jpg 708w,
-                      ./images/tehnocryak-desktop740.jpg 740w,
-                      ./images/tehnocryak-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
-                      src="./images/tehnocryak-tablet354.jpg"
-                      alt="Відкритий ноутбук"                      
+                        ./images/tehnocryak-desktop370.jpg 1x,
+                        ./images/tehnocryak-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
                     />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
-                  </div>
-                  <h3 class="portfolio-overlay__poster">Технокряк</h3>
-                  <p class="portfolio-overlay__subject">Веб-сайт</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
+                    <source
+                      srcset="
+                        ./images/tehnocryak-tablet354.jpg 1x,
+                        ./images/tehnocryak-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tehnocryak-mobile450.jpg 1x,
+                        ./images/tehnocryak-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="thumb__photo-portfolio"
-                      srcset="
-                      ./images/orlean-tablet354.jpg 354w,
-                      ./images/orlean-desktop370.jpg 370w,
-                      ./images/orlean-mobile450.jpg 450w,
-                      ./images/orlean-tablet708.jpg 708w,
-                      ./images/orlean-desktop740.jpg 740w,
-                      ./images/orlean-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
-                      src="./images/orlean-tablet354.jpg"
-                      alt="Грають в баскетбол"
-                     />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
+                      src="./images/tehnocryak-tablet354.jpg"
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  <h3 class="portfolio-overlay__poster">
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Технокряк</h3>
+                  <p class="caption__subject">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/orlean-desktop370.jpg 1x,
+                        ./images/orlean-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/orlean-tablet354.jpg 1x,
+                        ./images/orlean-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/orlean-mobile450.jpg 1x,
+                        ./images/orlean-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="thumb__photo-portfolio"
+                      src="./images/orlean-tablet354.jpg"
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="portfolio-overlay__subject">Дизайн</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
+                  <p class="caption__subject">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood-desktop370.jpg 1x,
+                        ./images/seafood-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-tablet354.jpg 1x,
+                        ./images/seafood-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-mobile450.jpg 1x,
+                        ./images/seafood-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="thumb__photo-portfolio"
-                      srcset="
-                      ./images/seafood-tablet354.jpg 354w,
-                      ./images/seafood-desktop370.jpg 370w,
-                      ./images/seafood-mobile450.jpg 450w,
-                      ./images/seafood-tablet708.jpg 708w,
-                      ./images/seafood-desktop740.jpg 740w,
-                      ./images/seafood-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
                       src="./images/seafood-tablet354.jpg"
-                      alt="Логотип ресторану"
-                                        />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  <h3 class="portfolio-overlay__poster">Ресторан Seafood</h3>
-                  <p class="portfolio-overlay__subject">Додаток</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Ресторан Seafood</h3>
+                  <p class="caption__subject">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime-desktop370.jpg 1x,
+                        ./images/prime-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-tablet354.jpg 1x,
+                        ./images/prime-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-mobile450.jpg 1x,
+                        ./images/prime-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="thumb__photo-portfolio"
-                      srcset="
-                      ./images/prime-tablet354.jpg 354w,
-                      ./images/prime-desktop370.jpg 370w,
-                      ./images/prime-mobile450.jpg 450w,
-                      ./images/prime-tablet708.jpg 708w,
-                      ./images/prime-desktop740.jpg 740w,
-                      ./images/prime-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
                       src="./images/prime-tablet354.jpg"
-                      alt="Навушники"
-                                        />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  <h3 class="portfolio-overlay__poster">Проєкт Prime</h3>
-                  <p class="portfolio-overlay__subject">Маркетинг</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Проєкт Prime</h3>
+                  <p class="caption__subject">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes-desktop370.jpg 1x,
+                        ./images/boxes-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-tablet354.jpg 1x,
+                        ./images/boxes-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-mobile450.jpg 1x,
+                        ./images/boxes-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="thumb__photo-portfolio"
-                     srcset="
-                      ./images/boxes-tablet354.jpg 354w,
-                      ./images/boxes-desktop370.jpg 370w,
-                      ./images/boxes-mobile450.jpg 450w,
-                      ./images/boxes-tablet708.jpg 708w,
-                      ./images/boxes-desktop740.jpg 740w,
-                      ./images/boxes-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
                       src="./images/boxes-tablet354.jpg"
-                      alt="Дві коробки"
-                                         />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  <h3 class="portfolio-overlay__poster">Проєкт Boxes</h3>
-                  <p class="portfolio-overlay__subject">Додаток</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Проєкт Boxes</h3>
+                  <p class="caption__subject">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/borders-desktop370.jpg 1x,
+                        ./images/borders-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/borders-tablet354.jpg 1x,
+                        ./images/borders-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/borders-mobile450.jpg 1x,
+                        ./images/borders-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="thumb__photo-portfolio"
-                      srcset="
-                      ./images/borders-tablet354.jpg 354w,
-                      ./images/borders-desktop370.jpg 370w,
-                      ./images/borders-mobile450.jpg 450w,
-                      ./images/borders-tablet708.jpg 708w,
-                      ./images/borders-desktop740.jpg 740w,
-                      ./images/borders-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
                       src="./images/borders-tablet354.jpg"
-                      alt="Монітор"
-                                       />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  <h3 class="portfolio-overlay__poster">Inspiration has no Borders</h3>
-                  <p class="portfolio-overlay__subject">Веб-сайт</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Inspiration has no Borders</h3>
+                  <p class="caption__subject">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/edition-desktop370.jpg 1x,
+                        ./images/edition-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/edition-tablet354.jpg 1x,
+                        ./images/edition-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/edition-mobile450.jpg 1x,
+                        ./images/edition-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="thumb__photo-portfolio"
-                      srcset="
-                      ./images/edition-tablet354.jpg 354w,
-                      ./images/edition-desktop370.jpg 370w,
-                      ./images/edition-mobile450.jpg 450w,
-                      ./images/edition-tablet708.jpg 708w,
-                      ./images/edition-desktop740.jpg 740w,
-                      ./images/edition-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
                       src="./images/edition-tablet354.jpg"
-                      alt="Відкрита книга"
-                                       />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  <h3 class="portfolio-overlay__poster">Видання Limited Edition</h3>
-                  <p class="portfolio-overlay__subject">Дизайн</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
-                    <img
-                      class="thumb__photo-portfolio"
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Видання Limited Edition</h3>
+                  <p class="caption__subject">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
                       srcset="
-                      ./images/lab-tablet354.jpg 354w,
-                      ./images/lab-desktop370.jpg 370w,
-                      ./images/lab-mobile450.jpg 450w,
-                      ./images/lab-tablet708.jpg 708w,
-                      ./images/lab-desktop740.jpg 740w,
-                      ./images/lab-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
-                      src="./images/lab-tablet354.jpg"
-                      alt="Бірка"
-                                         />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
-                  </div>
-                  <h3 class="portfolio-overlay__poster">Проєкт LAB</h3>
-                  <p class="portfolio-overlay__subject">Маркетинг</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="portfolio__card-link"
-                  ><div class="thumb">
+                        ./images/lab-desktop370.jpg 1x,
+                        ./images/lab-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-tablet354.jpg 1x,
+                        ./images/lab-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-mobile450.jpg 1x,
+                        ./images/lab-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
                     <img
                       class="thumb__photo-portfolio"
-                       srcset="
-                      ./images/business-tablet354.jpg 354w,
-                      ./images/business-desktop370.jpg 370w,
-                      ./images/business-mobile450.jpg 450w,
-                      ./images/business-tablet708.jpg 708w,
-                      ./images/business-desktop740.jpg 740w,
-                      ./images/business-mobile900.jpg 900w"
-                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100w"
-                      src="./images/business-tablet354.jpg"
-                      alt="Працює з ноутбуком"
-                                       />
-                    <div class="portfolio-overlay">
-                      <p class="portfolio__thumb-text">
-                        Ресурс пропонує комплексні пропозиції з різним рівнем
-                        функціоналу та сервісів. Все це дозволить відвідувачу
-                        отримати вичерпні відомості про компанію чи приватну
-                        особу.
-                      </p>
-                    </div>
+                      src="./images/lab-tablet354.jpg"
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
-                  <h3 class="portfolio-overlay__poster">Growing Business</h3>
-                  <p class="portfolio-overlay__subject">Додаток</p>
-                </a>
-              </li>
-            </ul>          
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Проєкт LAB</h3>
+                  <p class="caption__subject">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__card-poster">
+              <a href="#" class="portfolio__card-link"
+                ><div class="thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/business-desktop370.jpg 1x,
+                        ./images/business-desktop740.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/business-tablet354.jpg 1x,
+                        ./images/business-tablet708.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/business-mobile450.jpg 1x,
+                        ./images/business-mobile900.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="thumb__photo-portfolio"
+                      src="./images/business-tablet354.jpg"
+                      alt="Відкритий ноутбук"
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                    />
+                  </picture>
+                  <div class="portfolio-overlay">
+                    <p class="portfolio__thumb-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="caption">
+                  <h3 class="caption__poster">Growing Business</h3>
+                  <p class="caption__subject">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -360,27 +536,44 @@
     <footer class="footer">
       <div class="footer__page-footer">
         <div class="footer__address">
-          <a class="logo" href="./index.html"><span class="logo__logotype-web">Web</span><span
-              class="logo__logotype-studio logo__logotype-studio--inverse">Studio</span></a>
+          <a class="logo" href="./index.html"
+            ><span class="logo__logotype-web">Web</span
+            ><span class="logo__logotype-studio logo__logotype-studio--inverse"
+              >Studio</span
+            ></a
+          >
           <address>
             <ul class="communications list">
               <li>
-                <a class="communications__items" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                  rel="noopener noreferrer nofollow">
-                  м. Київ, пр-т Лесі Українки, 26</a>
+                <a
+                  class="communications__items"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  м. Київ, пр-т Лесі Українки, 26</a
+                >
               </li>
               <li>
-                <a class="communications__items-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a
+                  class="communications__items-contact"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li>
-                <a class="communications__items-contact" href="tel:+380961111111">+38 096 111-11-11</a>
+                <a
+                  class="communications__items-contact"
+                  href="tel:+380961111111"
+                  >+38 096 111-11-11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-    
+
         <!-- Footer social  -->
-    
+
         <div class="joining">
           <h3 class="joining__title-footer">Приєднуйтесь</h3>
           <div class="icon-social">
@@ -416,18 +609,27 @@
             </ul>
           </div>
         </div>
-    
+
         <!-- Підписка у футері -->
-    
+
         <div class="subscription">
           <h3 class="subscription__title-subscribe">Підпишіться на розсилку</h3>
           <form class="subscribe">
             <label for="subscribe-mail">
-              <input class="subscribe__input-subscribe" type="email" name="subscribe-mail" placeholder="E-mail" />
+              <input
+                class="subscribe__input-subscribe"
+                type="email"
+                name="subscribe-mail"
+                placeholder="E-mail"
+              />
             </label>
             <button class="button-subscribe" type="submit">
               Підписатися
-              <svg class="button-subscribe__icon-subscribe button-subscribe__icon-subscribe--append" width="24" height="24">
+              <svg
+                class="button-subscribe__icon-subscribe button-subscribe__icon-subscribe--append"
+                width="24"
+                height="24"
+              >
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -437,7 +639,7 @@
     </footer>
 
     <!-- Мобільне меню -->
-    
+
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button type="button" class="mobile-menu__close-button js-close-menu">
         <svg width="40" height="40">
@@ -448,10 +650,16 @@
         <nav class="mobile-menu__navi">
           <ul class="mobile-list list">
             <li class="mobile-list__nav-mob">
-              <a href="./index.html" class="mobile-list__mobi-link mobile-list__mobi-link--current">Студія</a>
+              <a
+                href="./index.html"
+                class="mobile-list__mobi-link mobile-list__mobi-link--current"
+                >Студія</a
+              >
             </li>
             <li class="mobile-list__nav-mob">
-              <a href="./portfolio.html" class="mobile-list__mobi-link">Портфоліо</a>
+              <a href="./portfolio.html" class="mobile-list__mobi-link"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-list__nav-mob">
               <a href="#" class="mobile-list__mobi-link">Контакти</a>
@@ -461,21 +669,26 @@
         <ul class="cont-list list">
           <li class="cont-list__mobile-contact">
             <a href="tel:+380961111111" class="cont-list__item-mobile">
-              +38 096 111 11 11</a>
+              +38 096 111 11 11</a
+            >
           </li>
           <li class="cont-list__mobile-contact">
             <a href="mailto:info@devstudio.com" class="cont-list__item-mail">
-              info@devstudio.com</a>
+              info@devstudio.com</a
+            >
           </li>
         </ul>
         <ul class="soc-list list">
-          <li class="soc-list__mobi-soc">Instagram
+          <li class="soc-list__mobi-soc">
+            Instagram
             <span class="soc-list__line"></span>
           </li>
-          <li class="soc-list__mobi-soc">Twitter
+          <li class="soc-list__mobi-soc">
+            Twitter
             <span class="soc-list__line"></span>
           </li>
-          <li class="soc-list__mobi-soc">Facebook
+          <li class="soc-list__mobi-soc">
+            Facebook
             <span class="soc-list__line"></span>
           </li>
           <li class="soc-list__mobi-soc">LinkedIn</li>
